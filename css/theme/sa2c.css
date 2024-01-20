@@ -329,3 +329,11 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   width: 30%;
   font-size: 0.85em;
   line-height: 1.5; }
+
+.col {
+  margin: 10px 0 15px 20px;
+  float: left;
+  z-index: -10;
+  width: 30%;
+  font-size: 0.85em;
+  line-height: 1.5; }
