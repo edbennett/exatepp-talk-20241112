@@ -55,7 +55,7 @@
 						</ul>
 						<li>Work to date</li>
 						<ul>
-							<li>Grid Sp(2N) integration</li>
+							<li>Grid Sp(2$N$) integration</li>
 							<li>DiRAC technical assessment</li>
 							<li>H100 benchmarking</li>
 						</ul>
@@ -69,6 +69,29 @@
 				<section data-markdown="slides/introduction.md" data-separator="^\r?\n---\r?\n$" data-separator-vertical="^\r?\n-\r?\n$"> </section>
 				<section data-markdown="slides/work_to_date.md" data-separator="^\r?\n---\r?\n$" data-separator-vertical="^\r?\n-\r?\n$"> </section>
 				<section data-markdown="slides/ongoing_work.md" data-separator="^\r?\n---\r?\n$" data-separator-vertical="^\r?\n-\r?\n$"> </section>
+				<section>
+					<h2>Summary</h2>
+					<ul>
+						<li>Lattice</li>
+						<ul>
+							<li>Has a wide software ecosystem</li>
+							<li>Requires a lot of resources</li>
+						</ul>
+						<li>We have</li>
+						<ul>
+							<li>Integrated changes for Sp(2$N$) into Grid</li>
+							<li>Assessed code performance on problems of interest</li>
+							<li>Found H100+SXM+NVLink much faster thann H100 PCIe</li>
+						</ul>
+						<li>We will</li>
+						<ul>
+							<li>Develop a SOMBRERO-like benchmark in Grid</li>
+							<li>Continue to optimise Grid Sp(2$N$) performance</li>
+							<li>Upgrade SOMBRERO to support CUDA, explore SYCL</li>
+							<li>Use more robust infrastructure for continuous benchmarking</li>
+						</ul>
+					</ul>
+				</section>
 				<section data-autoslide="5000">
 					<section>
 						<h1>Thank you</h1>
@@ -90,6 +113,9 @@
 				hash: true,
 				width: 1366,
 				height: 768,
+				markdown: {
+					animateLists: true,
+				},
 
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath ]
