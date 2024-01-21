@@ -27,17 +27,17 @@ The set of techniques for studying gauge theories discretised on a lattice.
 - Gauge fields: $N \times N$ matrices, one per link
   - 4 per lattice site (in 4D)
 - Matter fields: 4 $M$-element vectors, per site
-- Derivatives in continuum Lagrangian become nearest-neighbour interactions
-  - Action is local
-  - Lattice can be partitioned in space, and partitions worked on independently
+- Continuum derivatives $\rightarrow$ nearest-neighbour interactions
+  - Action is local $\Rightarrow$ Lattice can be partitioned in space
 - Observables are path integrals
   - Use Monte Carlo integration
 - Action is (usually) real
   - Use importance sampling
-  - Generate configurations of the gauge field representative of distribution dictated by the action
-- Characterise interaction between gauge field and matter by Dirac operator $D$
-  - Nearest-neighbour interaction
+  - Generate field configurations distributed $\propto$ action
+- Characterise gauge&ndash;matter interaction by $D$
+  - Sparse matrix; implement as function
   - Inversion of $D$ is >90% of execution time
+
 </div>
 
 <div id="right">
@@ -55,6 +55,9 @@ The set of techniques for studying gauge theories discretised on a lattice.
 - Boundary conditions are chosen to suit observable, but typically periodic
 - $>O(10^6)$ matrices & vectors of same dimensionality
   - $\Rightarrow$ General-purpose linear algebra libraries typically not a good fit
+- FLOPs and bytes transfered depend differently on $N$, $M$
+  - Different theories have different compute-communication ratios
+  - Hardware can have different relative performance for different machines
 
 -
 
@@ -103,7 +106,7 @@ openQCD
 
 - Two mini-app benchmarks based on HiRep code
 - [BSMBench](https://gitlab.com/edbennett/BSMBench)
-  - Matter field square-norm, matrix-vector multiplication, <br>Dirac operator application
+  - Matter field square-norm, matrix-vector multiplication, <br>$D$ application
   - SU(2) adjoint, SU(3) fundamental, SU(6) fundamental
   - Constructed manually, stripping out unneeded code
 - [SOMBRERO](https://github.com/sa2c/SOMBRERO)
