@@ -49,4 +49,19 @@
 
 ## H100 benchmarks
 
-TODO
+<div id="left">
+
+- Access via Boston Labs to two systems
+  - Supermicro with 2$\times$ NVIDIA H100 PCIe
+  - 1$\times$ NVIDIA DGX-H100
+- Test Grid ITT benchmark, SU(3) and SU(4)
+  - DGX outperforms PCIe even for one GPU for SU(3)
+  - SU(4) scales slightly better than SU(3) as expected
+
+</div>
+
+<div id="right">
+
+![Plot of Grid ITT benchmark comparison point on the machines tested, plus one node of CSD3 for comparison](./figs/h100.png)
+
+</div>
