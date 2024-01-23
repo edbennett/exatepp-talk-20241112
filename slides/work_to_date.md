@@ -29,7 +29,21 @@
 
 ## DiRAC Technical Assessment
 
-TODO
+<div id="left">
+
+- Work over Summer 2023 to
+  - Understand current research performance characteristics
+  - Identify appropriate software and resources
+- There remains work to be done on optimisation of Sp(2$N$) implementation
+
+</div>
+
+<div id="right">
+
+![Graph of multi-representation performance](./figs/grid-hirep-mr.png)
+![Graph of Hasenbusch-accelerated performance](./figs/grid-hirep-hb.png)
+
+</div>
 
 -
 
