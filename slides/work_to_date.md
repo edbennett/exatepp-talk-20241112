@@ -36,6 +36,11 @@
   - Identify appropriate software and resources
 - There remains work to be done on optimisation of Sp(2$N$) implementation
 
+![NVIDIA timeline](./figs/su3_timeline.png) <!-- .element height="200px" --> ![NVIDIA timeline](./figs/sp4_timeline.png) <!-- .element height="200px" --> 
+
+![NVIDIA timeline](./figs/sp4_timeline_long.png) <!-- .element style="margin-top: -20px;" -->
+
+
 </div>
 
 <div id="right">
