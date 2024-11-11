@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>ExaTEPP Lattice Developments</title>
+		<title>Lattice Gauge Theories at the Exascale Frontier: Part 2</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
@@ -17,15 +17,15 @@
 		<div class="reveal">
 			<div class="slides">
 				<section>
-					<h2 style="padding-top: 80px;">
-						ExaTEPP Lattice Developments
+					<h2 style="padding-top: 40px;">
+						Lattice Gauge Theories at the Exascale Frontier: Part 2
 					</h2>
-					<h3 style="margin-top: 40px;">
+					<h3 style="margin-top: 20px;">
 						Ed Bennett
 					</h3>
-					<p style="font-size: 32px; margin-top: -18px;">from work with Niccolò Forzano, Ryan Hill, Julian Lenz, Alessandro Lupo, et al.</p>
-					<p style="padding-top: 80px"><a href="https://indico.cern.ch/event/1351992/">ExaTEPP Workshop</a>, Edinburgh, 2024-01-23</p>
-					<p>Slides: <a href="https://edbennett.github.io/exatepp-talk-20240123">https://edbennett.github.io/exatepp-talk-20240123</a> • <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY</a></p>
+					<p style="font-size: 32px; margin-top: -18px;">from work with Niccolò Forzano, Ryan Hill, Julian Lenz, Alessandro Lupo, Andy Sunderland, Frederic Bonnet, et al.</p>
+					<p style="padding-top: 60px"><a href="https://indico.cern.ch/event/1351992/">SWIFT-HEP/ExaTEPP Workshop</a>, Warwick, 2024-11-12</p>
+					<p>Slides: <a href="https://edbennett.github.io/exatepp-talk-20240123">https://edbennett.github.io/exatepp-talk-20241112</a> • <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY</a></p>
 					<div style="padding-top: 50px;">
 						<a href="https://www.swansea.ac.uk">
 							<img class="plain title-image" src='images/su-vstack-white.svg' alt="Swansea University logo">
@@ -44,51 +44,41 @@
 						</a>
 					</div>
 				</section>
-
-				<section>
-					<h2>Outline</h2>
+                <section>
+                    <h2>Outline</h2>
 					<ul>
-						<li>Lattice introduction</li>
-						<ul>
-							<li>Methods</li>
-							<li>Software</li>
-						</ul>
-						<li>Work to date</li>
-						<ul>
-							<li>Grid Sp(2$N$) integration</li>
-							<li>DiRAC technical assessment</li>
-							<li>H100 benchmarking</li>
-						</ul>
-						<li>Ongoing work</li>
-						<ul>
-							<li>Grid BSM benchmarks</li>
-							<li>Continuous benchmark</li>
-						</ul>
-					</ul>
-				</section>
-				<section data-markdown="slides/introduction.md" data-separator="^\r?\n---\r?\n$" data-separator-vertical="^\r?\n-\r?\n$"> </section>
-				<section data-markdown="slides/work_to_date.md" data-separator="^\r?\n---\r?\n$" data-separator-vertical="^\r?\n-\r?\n$"> </section>
-				<section data-markdown="slides/ongoing_work.md" data-separator="^\r?\n---\r?\n$" data-separator-vertical="^\r?\n-\r?\n$"> </section>
+                        <li>Developments within ExaTEPP</li>
+                        <ul>
+                            <li>Software for simulation</li>
+							<ul>
+								<li>Grid Sp(2$N$)</li>
+								<li>Grid LLR</li>
+								</ul>
+                            <li>Benchmarking</li>
+							<ul>
+								<li>SOMBRERO and BKeeper</li>
+								<li>Continuous benchmark</li>
+								<li>Selected results</li>
+							</ul>
+                        </ul>
+                    </ul>
+                </section>
+				<section data-markdown="slides/software.md" data-separator="^\r?\n---\r?\n$" data-separator-vertical="^\r?\n-\r?\n$"> </section>
+				<section data-markdown="slides/benchmarking.md" data-separator="^\r?\n---\r?\n$" data-separator-vertical="^\r?\n-\r?\n$"> </section>
 				<section>
 					<h2>Summary</h2>
 					<ul>
-						<li>Lattice</li>
+						<li>Simulation</li>
 						<ul>
-							<li>Has a wide software ecosystem</li>
-							<li>Requires a lot of resources</li>
+							<li>Grid Sp(2$N$) is now used in production</li>
+							<li>Optimisation still ongoing</li>
+							<li>Working to take LLR to exascale</li>
 						</ul>
-						<li>We have</li>
+						<li>Benchmarking</li>
 						<ul>
-							<li>Integrated changes for Sp(2$N$) into Grid</li>
-							<li>Assessed code performance on problems of interest</li>
+							<li>Now have like-for-like benchmarks to compare HiRep and Grid</li>
 							<li>Found H100+SXM+NVLink much faster thann H100 PCIe</li>
-						</ul>
-						<li>We will</li>
-						<ul>
-							<li>Develop a SOMBRERO-like benchmark in Grid</li>
-							<li>Continue to optimise Grid Sp(2$N$) performance</li>
-							<li>Upgrade SOMBRERO to support CUDA, explore SYCL</li>
-							<li>Use more robust infrastructure for continuous benchmarking</li>
+							<li>Deployment of continuous benchmark infrastructure ongoing
 						</ul>
 					</ul>
 				</section>
@@ -97,6 +87,23 @@
 						<h1>Thank you</h1>
 					</section>
 				</section>
+				<section>
+					<section>
+						<h1>Extras</h1>
+					</section>
+					<section data-transition="fade-out">
+						<img src="images/nn.png" height="600px">
+						<p align="right">© 2016 hikari_no_yume, CC BY 4.0 (International)</p>
+					</section>
+					<section data-transition="fade">
+						<img src="images/dnn.png" height="600px">
+						<p align="right">© 2016 hikari_no_yume, CC BY 4.0 (International)</p>
+					</section>
+					<section data-transition="fade">
+						<img src="images/ai.png" height="600px">
+						<p align="right">© 2016 hikari_no_yume, CC BY 4.0 (International)</p>
+					</section>
+
 			</div>
 		</div>
 
@@ -116,7 +123,7 @@
 				markdown: {
 					animateLists: true,
 				},
-
+				slideNumber: 'c/t',
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath ]
 			});

@@ -1,7 +1,7 @@
-# ExaTEPP Lattice Developments Update
+# ExaTEPP Lattice Benchmarking Update
 
-Slides presented at the ExaTEPP Workshop, University of Edinburgh, January 2024.
+Slides presented at the ExaTEPP Workshop, University of Warwick, November 2024.
 
 * [Slides on GitHub Pages][rendered]
 
-[rendered]: https://edbennett.github.io/exatepp-talk-20240123
+[rendered]: https://edbennett.github.io/exatepp-talk-20241112
