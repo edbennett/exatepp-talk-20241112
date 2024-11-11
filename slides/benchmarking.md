@@ -81,7 +81,7 @@
 
 ## BKeeper vs SOMBRERO on CSD3 (Ice Lake)
 
-![Plot of BKeeper results](../images/bkeeper-test.svg) <!-- .element width="1300px" -->
+![Plot of BKeeper results](./images/bkeeper-test.svg) <!-- .element width="1300px" -->
 
 -
 

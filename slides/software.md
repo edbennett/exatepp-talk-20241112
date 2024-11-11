@@ -57,7 +57,7 @@
 
 ## the LLR algorithm
 
-![An energy axis divided into small blocks, with overlapping groups of four blocks considered as an energy interval $dE$](../images/llr-de.svg) <!-- .element width="600px" -->
+![An energy axis divided into small blocks, with overlapping groups of four blocks considered as an energy interval $dE$](./images/llr-de.svg) <!-- .element width="600px" -->
 
 - Partition the energy domain of interest
 - Take overlapping energy intervals of width $dE$
@@ -80,7 +80,7 @@
 
 <div style="width: 60%; float: right;" >
 
-![Figure 2 of [arXiv:2409.19426](https://arxiv.org/abs/2409.19426)](../images/llr-swallowtail.svg) <!-- .element width="800px" -->
+![Figure 2 of [arXiv:2409.19426](https://arxiv.org/abs/2409.19426)](./images/llr-swallowtail.svg) <!-- .element width="800px" -->
 
 </div>
 
