@@ -71,7 +71,7 @@
 - We would like a like-for-like comparison
 - We implement BKeeper,
   a Grid client application implementing the same tests as SOMBRERO
-  - In principle extensible to arbitray fermion formulation
+  - In principle extensible to arbitrary fermion formulation
 - Provides an estimate of "useful FLOP/s"
   - Compute ideal number of FLOP/s required for computation,
     divide by time
