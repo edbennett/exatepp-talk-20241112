@@ -41,6 +41,12 @@
 
 -
 
+## Example output
+
+![Example spectrum of Sp(2N) as discussed in previous talk](./images/spectrum.svg) <!-- .element width="1000px" -->
+
+-
+
 ## The Density of States
 
 - Typical lattice Monte Carlo computes
